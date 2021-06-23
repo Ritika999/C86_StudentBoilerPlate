@@ -42,6 +42,7 @@ export default class BookRequestScreen extends Component{
         "book_name":bookName,
         "reason_to_request":reasonToRequest,
         "request_id"  : randomRequestId,
+        "date"       : firebase.firestore.FieldValue.serverTimestamp()
      //code here
 
     })
